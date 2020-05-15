@@ -33,6 +33,7 @@ var arrLang = {
 		'team_title': 'Our Team',
 		'team_p1': 'We have professional team that consist form more then 7th experts in investments, finances, management and development with experience in BIG 4 of consulting companies.',
 		'place_map_title': 'How to find us',
+		'contacts_title': 'Contacts',
 		'footer_subscription_title': 'Subscription',
 		'footer_contacts_title': 'Contacts',
 		'footer_contacts_addres': 'Djufanova 1096/8, Řepy, 163 00 Praha 6'
@@ -72,6 +73,7 @@ var arrLang = {
 		'team_title': 'Náš tým',
 		'team_p1': 'Máme profesionální tým, který tvoří více než sedmý odborník v oblasti investic, financí, řízení a rozvoje se zkušenostmi v BIG 4 poradenských společností.',
 		'place_map_title': 'Jak nás najdete',
+		'contacts_title': 'Kontakty',
 		'footer_subscription_title': 'Předplatné',
 		'footer_contacts_title': 'Kontakty',
 		'footer_contacts_addres': 'Žufanova 1096/8, Řepy, 163 00 Praha 6'
@@ -87,16 +89,24 @@ if ($.cookie('lang') == undefined) {
 var lang = $.cookie('lang');
 $('.lang').each(function (index, element) {
 	$(this).text(arrLang[lang][$(this).attr('key')]);
+	$('#lang_flag').addClass(lang);
 });
+
+
 
 $(function () {
 	$('.translate').click(function () {
+
+		var rem_lang = $.cookie('lang');
+		$('#lang_flag').removeClass(rem_lang);
+
 		var lang = $(this).attr('id');
 		$.cookie('lang', lang, {
 			expires: 7
 		});
 		$('.lang').each(function (index, element) {
 			$(this).text(arrLang[lang][$(this).attr('key')]);
+			$('#lang_flag').addClass(lang);
 		});
 	});
 });

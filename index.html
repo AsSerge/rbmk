@@ -51,7 +51,18 @@
 			</div>
 
 			<style>
-				.flag::before {}
+				.flag {
+					display: inline-block;
+					padding-left: 25px;
+				}
+
+				.cz {
+					background: url('/img/cz.png') no-repeat 0 center/30%;
+				}
+
+				.en {
+					background: url('/img/en.png') no-repeat 0 center/30%;
+				}
 			</style>
 			<!-- Меню -->
 			<nav class="main-nav float-right d-none d-lg-block">
@@ -59,14 +70,13 @@
 					<li class="active"><a href="#intro" class="lang" key="menu_home">home</a></li>
 					<li><a href="#about" class="lang" key="menu_about">about</a></li>
 					<li><a href="#features" class="lang" key="menu_who">who we are</a></li>
-					<!-- <li><a href="#services" class="lang" key="menu_service">service</a></li> -->
 					<li><a href="#portfolio" class="lang" key="menu_projects">projects</a></li>
 					<li><a href="#team" class="lang" key="menu_our_team">our team</a></li>
 					<li><a href="#footer" class="lang" key="menu_contacts">contacts</a></li>
-					<li class="drop-down"><a href="#"><span class="flag en">Lang</span></a>
+					<li class="drop-down"><a href="#"><span id="lang_flag" class="flag">Lang</span></a>
 						<ul>
-							<li><a href="#" class="translate" id="cz">Česky</a></li>
-							<li><a href="#" class="translate" id="en">English</a></li>
+							<li><a href="#" class="translate" id="cz"><span class="flag cz">Česky</span></a></li>
+							<li><a href="#" class="translate" id="en"><span class="flag en">English</a></span></li>
 						</ul>
 					</li>
 
@@ -447,93 +457,17 @@
 		<!-- Секция Team -->
 		<section id="team" class="section-bg">
 			<div class="container">
-				<div class="section-header">
+				<header class="section-header">
 					<h3 class="lang" key="team_title">Our Team</h3>
 					<p class="lang" key="team_p1">We have professional team that consist form more then 7th experts in
 						investments, finances,
 						management and development with experience in BIG 4 of consulting companies.</p>
-				</div>
+				</header>
 				<div class="row">
 					<div class="col-lg-12 col-md-12 wow fadeInUp">
 						<img src="img/why-us-bg.jpg" class="img-fluid" alt="Заполните описание картинки">
 					</div>
 				</div>
-
-				<!-- <div class="row">
-
-					<div class="col-lg-3 col-md-6 wow fadeInUp">
-						<div class="member">
-							<img src="img/team-1.jpg" class="img-fluid" alt="Заполните описание картинки">
-							<div class="member-info">
-								<div class="member-info-content">
-									<h4>Jhon Doe</h4>
-									<span>general Manager</span>
-									<div class="social">
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="member">
-							<img src="img/team-3.jpg" class="img-fluid" alt="Заполните описание картинки">
-							<div class="member-info">
-								<div class="member-info-content">
-									<h4>Jhon Doe</h4>
-									<span>SEO Specialist</span>
-									<div class="social">
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="member">
-							<img src="img/team-2.jpg" class="img-fluid" alt="Заполните описание картинки">
-							<div class="member-info">
-								<div class="member-info-content">
-									<h4>Jhon Doe</h4>
-									<span>manager</span>
-									<div class="social">
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="member">
-							<img src="img/team-4.jpg" class="img-fluid" alt="Заполните описание картинки">
-							<div class="member-info">
-								<div class="member-info-content">
-									<h4>Jhon Doe</h4>
-									<span>Accountant</span>
-									<div class="social">
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div> -->
 
 			</div>
 		</section>
@@ -570,62 +504,51 @@
 		<section id="place_map">
 			<div class="container-fluid">
 				<header class="section-header">
-					<h3 class="lang" key="place_map_title">How to find us</h3>
-					<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus adipisci iusto alias, velit
-						enim repellendus magni doloremque odio natus! Quo saepe totam consectetur praesentium debitis
-						fugiat laudantium eos perspiciatis accusantium quibusdam hic animi rerum veniam dolore, at esse
-						inventore!</p> -->
+					<h3 class="section-title lang" key="place_map_title">How to find us</h3>
 				</header>
 				<div id="map"></div>
 			</div>
-
 		</section>
 		<!-- Конец секции Карта -->
+		<style>
+			.new_contacts {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.one_contacts_item {
+				width: 330px;
+				height: 100px;
+				margin: 5px;
+				text-align: center;
+			}
+		</style>
+		<!-- Секция контакты -->
+		<section id="contacts" style="margin:40px 0">
+			<div class="container">
+				<header class="section-header">
+					<h3 class="section-title lang" key="contacts_title">Contacts</h3>
+				</header>
+				<div class="row new_contacts">
+					<div class="one_contacts_item">
+						<h4>Addres:</h4>Djufanova 1096/8, Řepy, 163 00 Praha 6
+					</div>
+					<div class="one_contacts_item">
+						<h4>E-Mail:</h4><a href="mailto:qqq@qqq.ru">qqq@qqq.ru</a>
+					</div>
+					<div class="one_contacts_item">
+						<h4>Phone:</h4><a href="tel:89185990435">34&nbsp;918&nbsp;599&nbsp;04&nbsp;35</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- Конец секции Контакты -->
 	</main>
 
 	<!--  Footer -->
 	<footer id="footer" class="section-bg" style="background-color: #e7e7e7;">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="footer-info">
-							<h3>RBMK.CZ</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti ex
-								nesciunt harum quod velit possimus corporis aperiam reiciendis saepe.</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="footer-newsletter">
-							<h4 class="lang" key="footer_subscription_title">Subscription</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur elit.
-								Officia, sit?consectetur adipisicing elit. Officia, sit?</p>
-							<form action="" method="post">
-								<input type="email" name="Подписка:" required><input type="submit" value="Send">
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="footer-links">
-							<h4 class="lang" key="footer_contacts_title">Contacts</h4>
-							<p>
-								<div class="lang" key="footer_contacts_addres">Slezská 9, Praha 2 Метро "Naměsti Miru"
-								</div>
-								<div class="lang">Phone: +7 558 554 00 00</div>
-								<div class="lang">Email: info@example.com</div>
-							</p>
-						</div>
-						<div class="social-links">
-							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="container">
 			<div class="copyright">
 				&copy; Copyright <strong>RBMK.CZ</strong>. Rights Protected

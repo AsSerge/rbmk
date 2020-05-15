@@ -175,7 +175,7 @@ function initMap() {
 	});
 	// Настройка всплывающего окна
 	var info = new google.maps.InfoWindow({
-		content: "<h4>Это мое место</h4><p>Просто описание места</p>"
+		content: "<h4>RBMK</h4><p>Djufanova 1096/8, Řepy, 163 00 Praha 6</p>"
 	});
 	// Функция всплывающего окна
 	marker.addListener("click", function () {
