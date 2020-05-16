@@ -90,6 +90,7 @@ var lang = $.cookie('lang');
 $('.lang').each(function (index, element) {
 	$(this).text(arrLang[lang][$(this).attr('key')]);
 	$('#lang_flag').addClass(lang);
+	$('#lang_flag').html(lang);
 });
 
 
@@ -107,6 +108,7 @@ $(function () {
 		$('.lang').each(function (index, element) {
 			$(this).text(arrLang[lang][$(this).attr('key')]);
 			$('#lang_flag').addClass(lang);
+			$('#lang_flag').html(lang);
 		});
 	});
 });
