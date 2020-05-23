@@ -1,5 +1,5 @@
 var arrLang = {
-	'en': {
+	'en': {		
 		'menu_home': 'Home',
 		'menu_about': 'About Us',
 		'menu_who': 'Who we are',
@@ -39,44 +39,44 @@ var arrLang = {
 		'footer_contacts_addres': 'Djufanova 1096/8, Řepy, 163 00 Praha 6'
 
 	},
-	'cz': {
-		'menu_home': 'Domů',
+	'cz': {		
+		'menu_home': 'Adresa',
 		'menu_about': 'O nás',
 		'menu_who': 'Kdo jsme',
-		'menu_service': 'Služba',
+		'menu_service': 'Služby',
 		'menu_projects': 'Projekty',
 		'menu_our_team': 'Náš tým',
 		'menu_contacts': 'Kontakty',
 		'intro_btn_more_details': 'Více informací',
-		'main_subtitle': 'RBMK INVEST S.R.O. Je česká investiční společnost založená v roce 2018 v Praze.',
+		'main_subtitle': 'RBMK INVEST |S.R.O. je česká investiční společnost založená v roce 2018 v Praze.',
 		'about_title': 'O nás',
-		'about_p1': 'RBMK INVEST S.R.O. Je česká investiční společnost založená v roce 2018 v Praze. Hlavním cílem společnosti je shromažďovat odborné znalosti o investicích do nových projektů, jako jsou:',
-		'about_li1_span': 'Rozvoj',
+		'about_p1': 'RBMK INVESt S.R.O. je česká investiční společnost založená v roce 2018 v Praze. Hlavní cíl společnosti - je shromažďovat odborné znalosti o investicích do nových projektů, jako jsou:',
+		'about_li1_span': 'Vývoj',
 		'about_li2_span': 'Obchod',
 		'about_li3_span': 'IT služby',
 		'about_li4_span': 'Finanční služby',
 		'about_p2': 'Zeměpisná činnost společnosti je prezentována v těchto zemích: Česká republika, Německo, Švýcarsko, Rusko, Čína, Kazachstán, Kyrgyzstán, Kypr, Keňa.',
 		'features_title': 'Kdo jsme',
-		'features_p1': 'Podnikatelské. Vášnivý exkluzivní. To jsou vlastnosti, které lze použít k popisu komunity úspěšných podnikatelů a soukromých osob, které se spojily v rámci řízení investic RMBK.',
+		'features_p1': 'Podnikatelské. Vášnivě exkluzivní. To jsou vlastnosti, které lze použít k popisu komunity úspěšných podnikatelů a soukromých osob, které se spojily v rámci řízení investic RMBK.',
 		'features_p2': 'Společným cílem akcionářů je investovat vlastní soukromé zdroje přímo jako kapitál do středních společností. RBMK INVEST se proto považuje za odborný kontakt ve všech záležitostech týkajících se našich ústředních témat podnikání, růstu a financí - vždy na stejné úrovni s cílovými společnostmi a lidmi jednajícími jejich jménem.',
 		'features_p3': 'Zatímco pečujeme o naši síť investorů v českých, švýcarských a německých společnostech, strukturujeme a spravujeme exkluzivní přímé investice ve vybraných růstových společnostech a zodpovídáme také za získávání a péči o investory.',
 		'call-to-action_title': 'Kontaktujte nás',
 		'call-to-action_p1': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non odit natus perferendis officia autem porro ratione, aut, harum nihil officiis eveniet tempore labore doloremque? Totam est sint nihil předpokládá.',
-		'call-to-action_title_btn': 'Vyžádejte si kal',
+		'call-to-action_title_btn': 'Vyžádejte si hovor',
 		'portfolio_title': 'Naše investice do soukromého kapitálu',
-		'portfolio_p1': 'Investiční portfolio společnosti obsahuje všechny nezbytné trendy pro podnikání diverzifikovanější a stabilnější. Investujeme globálně do fondů, sekundárních společností a přímo do soukromého kapitálu.',
-		'portfolio_all': 'Všechno',
-		'portfolio_app': 'Rozvoj',
+		'portfolio_p1': 'Investiční portfolio společnosti obsahuje všechny nezbytné trendy pro podnikání diverzifikovanější a stabilnější. Investujeme globálně do fondů, sekundárních a přímo do soukromého kapitálu.',
+		'portfolio_all': 'Vše',
+		'portfolio_app': 'Vývoj',
 		'portfolio_card': 'Obchod',
 		'portfolio_web': 'IT služby',
 		'portfolio_fin': 'Finanční služby',
 		'team_title': 'Náš tým',
-		'team_p1': 'Máme profesionální tým, který tvoří více než sedmý odborník v oblasti investic, financí, řízení a rozvoje se zkušenostmi v BIG 4 poradenských společností.',
+		'team_p1': 'Disponujeme profesionálním týmem, který tvoří více než sedm odborníků v oblasti investic, financí, řízení a rozvoje se zkušenostmi v BIG 4 poradenských společností.',
 		'place_map_title': 'Jak nás najdete',
 		'contacts_title': 'Kontakty',
 		'footer_subscription_title': 'Předplatné',
 		'footer_contacts_title': 'Kontakty',
-		'footer_contacts_addres': 'Žufanova 1096/8, Řepy, 163 00 Praha 6'
+		'footer_contacts_addres': ' Žufanova 1096/8, Řepy, 163 00 Praha 6'
 	}
 };
 // Define a cookie and set the language
